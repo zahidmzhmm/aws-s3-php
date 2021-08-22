@@ -1,11 +1,11 @@
 <b>ARN:</b> <br>
-arn:aws:iam::898714848670:user/lectureverb-app
+arn:aws:iam::***:user/test-app
 <b>Bucket Name:</b> <br>
-<small>app.lectureverb</small> <br>
+<small>app.test</small> <br>
 <b>IAM KEY:</b> <br>
-<small>AKIA5CP4UJWPCYCA6EUW</small> <br>
+<small>***</small> <br>
 <b>IAM SECRET:</b> <br>
-<small>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</small><br>
+<small>***</small><br>
 <b>Bucket Policy</b>
 <pre>
 {
