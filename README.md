@@ -16,7 +16,7 @@ arn:aws:iam::898714848670:user/lectureverb-app
             "Sid": "Stmt1488493308547",
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::898714848670:user/lectureverb-app"
+                "AWS": "arn:aws:iam::***:user/test-app"
             },
             "Action": [
                 "s3:ListBucket",
@@ -25,7 +25,7 @@ arn:aws:iam::898714848670:user/lectureverb-app
                 "s3:Get*",
                 "s3:Put*"
             ],
-            "Resource": "arn:aws:s3:::app.lectureverb"
+            "Resource": "arn:aws:s3:::app.test"
         }
     ]
 }
