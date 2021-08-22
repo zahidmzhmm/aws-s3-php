@@ -1,11 +1,10 @@
 <?php
 include "config.php";
 if (isset($_FILES['uploadFile'])) {
-    $upload = new \app\aws\Upload();
-    $response = $upload->uploadToS3($_FILES['uploadFile']['name'], $_FILES['uploadFile']['tmp_name'], 'uploads');
-    echo '<pre>';
-    var_dump($response);
-    echo '</pre>';
+    $aws = new \app\aws\AwsS3();
+    $response = $aws->uploadToS3($_FILES['uploadFile']['name'], $_FILES['uploadFile']['tmp_name'], 'uploads');
+    echo '<a href="read.php?fileName=' . $response['file']['flname'] . '">Download' . '</a>';
+    exit;
 }
 ?>
 <form action="" method="post" enctype="multipart/form-data">
